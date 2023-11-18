@@ -1,0 +1,374 @@
+/* css reset  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* navbar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position:relative;
+    top: 0px;
+
+    /* background-color: black;
+    opacity: 0.6;
+    if we do this..then text and image pe bhi opacitiywali property apply hogi */
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+/* logo and image  */
+#logo {
+    margin: 4px 20px;
+}
+
+#logo img {
+    width: 64px;
+    height: 70px;
+}
+
+/* list items  */
+
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: azure;
+
+
+    display: block;
+    padding: 4px 20px;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+
+/* Home sectiom  */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 7px 15px;
+    height: 500px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(../img/bg1.png) no-repeat center center/cover;
+
+    top: 0px;
+    left: 0px;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+.h-primary {
+    font-size: 2.5rem;
+    padding: 15px;
+    height:100px;
+    width:200px
+}
+.h-primary::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(15, 15, 15);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.33;
+
+}
+#home .h-primary {
+    text-align: center;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    text-wrap: wrap;
+    width: 700px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    margin: 0px 1px;
+    padding: 0px 1px;
+
+}
+
+
+
+#home-para {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-family: serif;
+    width: 700px;
+    height: 255px;
+
+    padding: 20px 3px;
+    /* background-color: rgb(95, 93, 93); */
+
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+#home-para::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(15, 15, 15);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.33;
+
+}
+
+.btn {
+    border: 2px solid white;
+    background-color: rgb(76, 65, 65);
+    color: white;
+    padding: 4px 20px;
+    margin: 15px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    background-color: aliceblue;
+    color: brown;
+    border: 2px solid rgb(44, 7, 7);
+    cursor: pointer;
+}
+
+
+/* OUR SERVICES */
+
+#services {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Service-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: -35px;
+}
+
+#services .box {
+    border: 2px solid black;
+    background-color: rgb(245, 233, 233);
+    border-radius: 25px;
+    width: 300px;
+    padding: 5px;
+    padding-top: 8px;
+    margin: 2px 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 2px 2px 10px rgb(123, 107, 107), -2px -2px 10px rgb(123, 107, 107);
+
+}
+
+#services .box img {
+    height: 200px;
+    width: 250px;
+    margin: auto;
+    padding: 2px;
+    display: block;
+
+}
+
+.service-secondary-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 15px;
+
+}
+
+.service-para {
+    text-align: center;
+    padding: 3px;
+    margin: 10px;
+}
+
+
+/* OUR CLIENTS*/
+
+#client-section {
+    height: 310px;
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../img/bg2.png);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.33;
+}
+
+#Client-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 15px;
+    margin: 10px;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 35px;
+}
+
+#clients img {
+    height: 150px;
+
+}
+
+/* CONTACT US  */
+#contact-section {
+    height: 610px;
+    position: relative;
+
+}
+
+#contact-section::before{
+    content: "";
+    position: absolute;
+    background: url(../img/contactus.png)no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#Contact-heading{
+    
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 15px;
+    margin: 8px;
+    
+}
+
+#outer-contact-box{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+#contact-box{
+    
+    margin-right: 90px;
+    border:2px solid black;
+    box-shadow:2px 2px 10px rgb(123, 107, 107), -2px -2px 10px rgb(123, 107, 107);;
+    border-radius: 30px;
+    width: 500px;
+    height: 495px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+
+
+}
+
+.form-group{
+    padding: 8px;
+}
+
+#contact-box label{
+    font-size: 20px;
+    color: rgb(39, 10, 10);
+    margin: 2px;
+
+    font-weight: bold;
+
+}
+#contact-box input{
+   width: 100%;
+   padding: 3px;
+   margin: 5px;
+
+   border: 2px solid black;
+   border-radius: 5px;
+
+   font-size: medium;
+
+}
+#contact-box textarea{
+   width: 100%;
+   padding: 3px;
+   margin: 5px;
+
+   border: 2px solid black;
+   border-radius: 8px;
+
+}
+
+
+/* FOOTER  */
+
+footer{
+    text-align: center;
+    background-color: grey;
+    color: aliceblue;
+    font: 100;
+
+    margin: 2px;
+    padding: 10px 20px;
+}
